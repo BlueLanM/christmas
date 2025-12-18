@@ -2,8 +2,7 @@
 
 Christmas scene using threejs, react three fiber and gaussian splatting
 
-[![screenshot](<img width="1253" height="1259" alt="image" src="https://github.com/user-attachments/assets/43fb3a8b-4864-44d9-93e1-35bedcf35929" />
-)](https://bluelanm.github.io/christmas/)
+[![screenshot](https://github.com/user-attachments/assets/43fb3a8b-4864-44d9-93e1-35bedcf35929)](https://bluelanm.github.io/christmas/)
 
 ## Setup
 
