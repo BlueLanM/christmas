@@ -15,6 +15,7 @@ import gsap from "gsap";
 import SnowFlakes from "./SnowFlakes";
 import FireWorks from "./FireWorks";
 import LumaWorld from "./LumaWorld";
+import ErrorBoundary from "./ErrorBoundary";
 
 export default function SnowGlobeModel(props) {
 	const { nodes, materials } = useGLTF(`${process.env.PUBLIC_URL}/snowglobe-transformed.glb`);
@@ -138,7 +139,11 @@ export default function SnowGlobeModel(props) {
 				/>
 				<SnowFlakes count={2000} />
 			</mesh>
-			{!props.isMobile && <LumaWorld visible={insideMesh} />}
+			{!props.isMobile && (
+				<ErrorBoundary fallback={null}>
+					<LumaWorld visible={insideMesh} />
+				</ErrorBoundary>
+			)}
 			<Texts />
 		</group>
 	);
