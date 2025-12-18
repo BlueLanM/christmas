@@ -17,7 +17,7 @@ import FireWorks from "./FireWorks";
 import LumaWorld from "./LumaWorld";
 
 export default function SnowGlobeModel(props) {
-	const { nodes, materials } = useGLTF("/snowglobe-transformed.glb");
+	const { nodes, materials } = useGLTF(`${process.env.PUBLIC_URL}/snowglobe-transformed.glb`);
 	const footer = document.querySelector(".footer");
 	const snowGlobeRef = useRef();
 	const snowGlobeRef2 = useRef();
@@ -26,7 +26,7 @@ export default function SnowGlobeModel(props) {
 	const [insideMesh, setInsideMesh] = useState(false);
 
 	const groupRef = useRef();
-	const texture = useTexture("/epic.jpg");
+	const texture = useTexture(`${process.env.PUBLIC_URL}/epic.jpg`);
 	const { camera } = useThree();
 	const cameraPosition = camera.position;
 	const ray = new THREE.Ray(new THREE.Vector2(0, 0), cameraPosition);
@@ -143,7 +143,7 @@ export default function SnowGlobeModel(props) {
 		</group>
 	);
 }
-useGLTF.preload("/snowglobe-transformed.glb");
+useGLTF.preload(`${process.env.PUBLIC_URL}/snowglobe-transformed.glb`);
 
 function Texts() {
 	return (
@@ -151,7 +151,7 @@ function Texts() {
 			<Text3D
 				letterSpacing={0.06}
 				size={0.3}
-				font="/Inter_Bold.json"
+				font={`${process.env.PUBLIC_URL}/Inter_Bold.json`}
 				position={[-2.8, 3.3, 10]}
 			>
         LanM
@@ -163,7 +163,7 @@ function Texts() {
 			</Text3D>
 			<Billboard>
 				<Text
-					font="/DancingScript-VariableFont_wght.ttf"
+					font={`${process.env.PUBLIC_URL}/DancingScript-VariableFont_wght.ttf`}
 					maxWidth={3.5}
 					textAlign="center"
 					position={[0, 12.45, 0]}
