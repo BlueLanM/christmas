@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/christmas/static/css/main.e58b9cd4.css",
-    "main.js": "/christmas/static/js/main.75b72134.js",
+    "main.js": "/christmas/static/js/main.bb8befd3.js",
     "index.html": "/christmas/index.html",
     "main.e58b9cd4.css.map": "/christmas/static/css/main.e58b9cd4.css.map",
-    "main.75b72134.js.map": "/christmas/static/js/main.75b72134.js.map"
+    "main.bb8befd3.js.map": "/christmas/static/js/main.bb8befd3.js.map"
   },
   "entrypoints": [
     "static/css/main.e58b9cd4.css",
-    "static/js/main.75b72134.js"
+    "static/js/main.bb8befd3.js"
   ]
 }
