@@ -4,7 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
-  "homepage": "https://bluelanm.github.io/christmas",
+  "homepage": "https://github.com/BlueLanM/christmas",
   "dependencies": {
     "@lumaai/luma-web": "0.1.15",
     "@react-three/drei": "latest",
