@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": ".",
   "dependencies": {
     "@lumaai/luma-web": "0.1.15",
     "@react-three/drei": "latest",
