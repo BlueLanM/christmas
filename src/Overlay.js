@@ -10,10 +10,10 @@ export default function Overlay({ inside, setInside }) {
 					onClick={() => {
 						setInside(!inside);
 					}}>
-          SCROLL TO LOOK INSIDE
+          滚动进入内部
 				</button>
 				<br />
-        Created with love by Anderson Mancini. Using LumaAI for the outside Gaussian Splatting and BlockadeLabs for internal snow globe.
+        Created with love by LanM.
 			</footer>
 		</>
 	);
